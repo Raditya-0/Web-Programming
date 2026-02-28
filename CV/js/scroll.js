@@ -17,7 +17,9 @@ Portfolio.sections = [
     document.querySelector('#education'),
     document.querySelector('#experience'),
     document.querySelector('#projects'),
+    document.querySelector('#upcoming'),
     document.querySelector('#achievement'),
+    document.querySelector('#about-details'),
     document.querySelector('#contact')
 ];
 
