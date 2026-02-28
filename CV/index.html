@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raditya Akmal</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/achievement.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a class="nav-brand" href="../menu/index.html">MENU</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <header id="about" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h2 class="role">Student AI Engineer In ITS Surabaya</h2>
+                <h1 class="title">
+                    Hi, I'm<br>
+                    <span class="typed-text"></span><span class="cursor"></span>
+                </h1>
+
+                <div class="dynamic-content">
+                    <p class="dynamic-subtitle"></p>
+                    <div class="dynamic-tags"></div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Portfolio</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="portrait-frame">
+                    <img src="../Asset/img/Foto_Profile.jpeg" alt="Profile Photo" class="portrait-slide active">
+                    <img src="../Asset/img/Foto_diri_KRAI.jpeg" alt="KRAI Photo" class="portrait-slide">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- EDUCATION -->
+    <section id="education" class="experience-section">
+        <div class="experience-inner">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+
+            <div class="timeline-v2">
+                <div class="timeline-item-v2 present">
+                    <p class="timeline-date">July 2024 - <span class="text-accent">Present</span></p>
+                    <h3 class="timeline-role">Student of Artificial Intelligence Engineering</h3>
+                    <p class="timeline-company">Sepuluh Nopember Institute of Technology (ITS)</p>
+                </div>
+
+                <div class="timeline-item-v2">
+                    <p class="timeline-date">July 2021 - June 2024</p>
+                    <h3 class="timeline-role">Science Major Student</h3>
+                    <p class="timeline-company">SMAN 20 Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience-section">
+        <div class="experience-inner">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="timeline-v2">
+                <div class="timeline-item-v2 present">
+                    <p class="timeline-date">November 2024 - <span class="text-accent">Present</span></p>
+                    <h3 class="timeline-role">Robot Programmer</h3>
+                    <p class="timeline-company">ITS Robocon</p>
+                </div>
+
+                <div class="timeline-item-v2 present">
+                    <p class="timeline-date">August 2025 - <span class="text-accent">Present</span></p>
+                    <h3 class="timeline-role">Assistant Lecturer</h3>
+                    <p class="timeline-company">Sepuluh Nopember Institute of Technology (ITS)</p>
+                    <p class="timeline-course">Data Structure</p>
+                </div>
+
+                <div class="timeline-item-v2">
+                    <p class="timeline-date">August 2025 - December 2025</p>
+                    <h3 class="timeline-role">Assistant Lecturer</h3>
+                    <p class="timeline-company">Sepuluh Nopember Institute of Technology (ITS)</p>
+                    <p class="timeline-course">Fundamental Programming</p>
+                </div>
+
+                <div class="timeline-item-v2">
+                    <p class="timeline-date">March 2025 - November 2025</p>
+                    <h3 class="timeline-role">Game Developer</h3>
+                    <p class="timeline-company">Schematics ITS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="experience-section">
+        <div class="projects-inner">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-info">
+                        <span class="jp-category">AI Research · Signal Processing</span>
+                        <h3>Atrial Fibrillation Detection</h3>
+                        <p>Analisis kinerja model Transformer untuk klasifikasi sinyal ECG dalam mendeteksi Atrial
+                            Fibrillation. Membandingkan beberapa arsitektur dan metode preprocessing pada data
+                            time-series biomedis.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Transformer</span>
+                            <span>ECG</span>
+                            <span>PyTorch</span>
+                            <span>HuggingFace</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Raditya-0" target="_blank" aria-label="GitHub">
+                                <img src="../Asset/logo/github.png" alt="GitHub">
+                            </a>
+                            <a href="https://huggingface.co/spaces/Raditya-0/Atrial-Fibrillation-Detect" target="_blank"
+                                aria-label="HuggingFace">
+                                <img src="../Asset/logo/huggingface.png" alt="HuggingFace">
+                            </a>
+                            <a href="../Asset/docs/Analisis Kinerja Model Transformer untuk Klasifikasi.pdf"
+                                target="_blank" aria-label="Paper">
+                                <img src="../Asset/logo/book.png" alt="Paper">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-info">
+                        <span class="jp-category">Game Development · OOP</span>
+                        <h3>Dual Dimension</h3>
+                        <p>Game platformer 2D dengan pemain berpindah antar dimensi untuk menghindari jebakan
+                            dan musuh yang berbahaya. Platform aman di satu dimensi bisa menjadi bahaya di dimensi
+                            lainnya.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>OOP</span>
+                            <span>2D Platformer</span>
+                            <span>Game Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Raditya-0/dual-dimension-platformer" target="_blank"
+                                aria-label="GitHub">
+                                <img src="../Asset/logo/github.png" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra projects (hidden by default) -->
+            <div class="projects-extra" id="projects-extra">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-info">
+                            <span class="jp-category">Web Development · Marketplace</span>
+                            <h3>Project Marketplace</h3>
+                            <p>Aplikasi web marketplace sederhana dengan halaman produk, slider produk unggulan,
+                                pencarian dengan rekomendasi real-time, halaman detail produk, dan form login.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Vite</span>
+                                <span>Tailwind CSS</span>
+                                <span>React Router</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Raditya-0/marketplace-front-end-web" target="_blank"
+                                    aria-label="GitHub">
+                                    <img src="../Asset/logo/github.png" alt="GitHub">
+                                </a>
+                                    <a href="https://raditya-0.github.io/marketplace-front-end-web/" target="_blank"
+                                    aria-label="Live Demo">
+                                    <img src="../Asset/logo/chrome.png" alt="Live Demo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-number">04</div>
+                        <div class="project-info">
+                            <span class="jp-category">Game Development · Unity</span>
+                            <h3>Unravel The Adventure</h3>
+                            <p>Game platformer 2D di mana ksatria berani menjelajahi dunia fantasi, menghadapi
+                                perangkap, berinteraksi dengan NPC, dan mengalahkan bos epik. Juara 3 Lomba MAGE 9.</p>
+                            <div class="tags">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>Game Design</span>
+                                <span>2D Platformer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="../Asset/docs/Sertifikat_MAGE9_GameDev.pdf" target="_blank" aria-label="Award">
+                                    <img src="../Asset/logo/award.png" alt="Award">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More / See Less button -->
+            <div class="see-more-wrapper">
+                <button class="see-more-btn" id="see-more-btn">
+                    See More Projects <span class="see-more-arrow">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENT -->
+    <section id="achievement" class="container">
+        <div class="section-header">
+            <h2>Achievement</h2>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-cover">
+                    <img src="../Asset/img/Juara_ABU_Robocon.jpg" alt="Certificate Cover">
+                </div>
+                <div class="achievement-info">
+                    <h3>Best Design ABU Robocon 2025</h3>
+                    <p class="achievement-meta">Abu Robocon &bull; 2025</p>
+                    <a href="https://www.linkedin.com/posts/itsrobocon_aburobocon2025-aburobocon-its-activity-7369267542017654784-Jnp5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8HCDsBRiVEFCQ89OeROJkxv6uUjW1nd2I"
+                        target="_blank" class="achievement-link">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-cover">
+                    <img src="../Asset/img/Foto_KRAI.jpeg" alt="Certificate Cover">
+                </div>
+                <div class="achievement-info">
+                    <h3>Juara 1 Kontes Robot ABU Robocon Indonesia (KRAI) 2025</h3>
+                    <p class="achievement-meta">Belmawa &bull; 2025</p>
+                    <a href="https://www.its.ac.id/news/juarai-krai-2025-tim-robot-its-resmi-wakili-indonesia-ke-mongolia/"
+                        target="_blank" class="achievement-link">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-cover">
+                    <img src="../Asset/img/Juara3_MAGE9.jpeg" alt="Certificate Cover">
+                </div>
+                <div class="achievement-info">
+                    <h3>Juara 3 Game Development MAGE 9</h3>
+                    <p class="achievement-meta">Teknik Komputer &bull; 2023</p>
+                    <a href="../Asset/docs/Sertifikat_MAGE9_GameDev.pdf" target="_blank" class="achievement-link">View
+                        Details
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Get in Touch</h2>
+            <p>Interested in collaboration or have any questions? I am currently open for new opportunities.</p>
+            <a href="https://mail.google.com/mail/?view=cm&to=radityaakmal514@gmail.com" target="_blank"
+                class="email-link">radityaakmal514@gmail.com</a>
+            <div class="social-links">
+                <a href="https://github.com/Raditya-0" target="_blank" aria-label="GitHub">
+                    <img src="../Asset/logo/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/raditya-akmal-763040310/" target="_blank" aria-label="LinkedIn">
+                    <img src="../Asset/logo/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://huggingface.co/Raditya-0" target="_blank" aria-label="HuggingFace">
+                    <img src="../Asset/logo/huggingface.png" alt="HuggingFace">
+                </a>
+            </div>
+            <p class="copyright">© 2026 Raditya Akmal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Modular JS -->
+    <script defer src="js/particles.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/observer.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/projects.js"></script>
+    <script defer src="js/typing.js"></script>
+    <script defer src="js/slideshow.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/* base.css — Reset, html/body, links */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    background-color: #080c14;
+    background-image:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(74, 144, 226, 0.10) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 90%, rgba(74, 144, 226, 0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(10, 20, 50, 0.5) 0%, transparent 70%);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.55;
+}
+
+nav,
+header,
+section,
+footer,
+.scroll-progress-container {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,85 @@
+/* timeline.css — Education & Experience timeline (v2 vertical style) */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.timeline-v2 {
+    border-left: 1px solid #222;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.timeline-item-v2 {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 60px;
+}
+
+.timeline-item-v2:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item-v2::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+.timeline-item-v2.present::before {
+    background-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+.timeline-date {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.timeline-role {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.timeline-company {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.timeline-course {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #4a90e2;
+    background-color: rgba(74, 144, 226, 0.1);
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}

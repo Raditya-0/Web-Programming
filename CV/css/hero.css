@@ -1,0 +1,177 @@
+/* hero.css — Hero section, portrait slideshow, dynamic typing tags */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 80px;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    max-width: 800px;
+}
+
+.role {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 800;
+    min-height: 170px;
+}
+
+/* Typed text & cursor */
+.typed-text {
+    color: #4a90e2;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    height: 1em;
+    background-color: #fff;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #fff;
+    }
+}
+
+/* Dynamic content */
+.dynamic-content {
+    min-height: 120px;
+    margin-bottom: 40px;
+}
+
+.dynamic-subtitle {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.dynamic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.tags-row-break {
+    width: 100%;
+    height: 0;
+}
+
+.dynamic-tag {
+    background-color: rgba(74, 144, 226, 0.1);
+    color: #4a90e2;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: tagFadeIn 0.4s forwards;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+        box-shadow 0.2s ease, transform 0.1s ease;
+    user-select: none;
+}
+
+.dynamic-tag:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+    border-color: rgba(74, 144, 226, 0.5);
+    box-shadow: 0 0 12px rgba(74, 144, 226, 0.25);
+}
+
+.dynamic-tag:active {
+    transform: scale(0.93);
+    background-color: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.2);
+}
+
+@keyframes tagFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Hero image / portrait slideshow */
+.hero-image-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: tagFadeIn 0.8s 0.5s forwards;
+}
+
+.portrait-frame {
+    width: 320px;
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #222;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: #151515;
+    position: relative;
+}
+
+.portrait-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.portrait-slide.active {
+    opacity: 1;
+}

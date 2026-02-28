@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raditya Akmal — Pertemuan 1</title>
+    <meta name="description" content="Kumpulan dokumentasi dan project tugas Pemrograman Web Semester 4." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-dot"></span>
+            Raditya Akmal
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="https://github.com/Raditya-0/Web-Programming" target="_blank" rel="noreferrer"
+                class="nav-link nav-link--external">
+                GitHub <span class="ext-icon">↗</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-kicker">
+                    <span class="kicker-dot"></span>
+                    Pemrograman Web · Semester 4
+                </p>
+                <h1 class="hero-title">
+                    Project Showcase<br />
+                    <span class="hero-title--accent">Semester&nbsp;4</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Kumpulan dokumentasi, laporan tugas, dan source code pengembangan web.
+                </p>
+                <div class="hero-scroll-hint" aria-hidden="true">
+                    <span>scroll</span>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="hero-badge" aria-hidden="true">
+                <span class="badge-lang">HTML</span>
+                <span class="badge-sep">·</span>
+                <span class="badge-lang">CSS</span>
+                <span class="badge-sep">·</span>
+                <span class="badge-lang">JS</span>
+            </div>
+        </section>
+
+        <!-- CARDS GRID -->
+        <section class="projects" id="projects" aria-label="Daftar tugas dan project">
+            <div class="projects-inner">
+
+                <div class="section-label">
+                    <span class="label-line" aria-hidden="true"></span>
+                    <span>Tasks</span>
+                </div>
+
+                <div class="cards-grid">
+
+                    <!-- Card: CV -->
+                    <div class="card" id="card-cv">
+                        <div class="card-header">
+                            <span class="card-number">01</span>
+                            <span class="card-pill card-pill--blue">HTML · CSS · JS</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="../CV/index.html" class="stretched-link">Curriculum Vitae</a>
+                        </h2>
+                        <p class="card-desc">
+                            Personal CV berbasis web menggunakan HTML, CSS modular, dan JavaScript. Menampilkan section
+                            About, Education, Experience, Projects, Achievement, dan Contact.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/Raditya-0" target="_blank" rel="noreferrer" class="card-repo"
+                                aria-label="Lihat Source Code di GitHub">
+                                <img src="../Asset/logo/github.png" alt="GitHub" class="repo-icon">
+                                <span>Source Code</span>
+                            </a>
+                            <span class="card-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div class="card-glow" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Card: coming soon -->
+                    <div class="card card--locked" aria-disabled="true" id="card-task2">
+                        <div class="card-header">
+                            <span class="card-number">02</span>
+                            <span class="card-pill">Soon</span>
+                        </div>
+                        <h2 class="card-title">Task 2</h2>
+                        <p class="card-desc">
+                            Project selanjutnya akan ditambahkan di sini setelah dikerjakan.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-path">
+                                <span class="repo-icon-locked" aria-hidden="true"><img src="../Asset/logo/lock.png" alt="Lock" class="repo-icon"></span> Upcoming
+                            </span>
+                            <span class="card-lock" aria-hidden="true"></span>
+                        </div>
+                        <div class="card-glow card-glow--dim" aria-hidden="true"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">© <span id="year"></span> Raditya Akmal · Pemrograman Web</p>
+            <p class="footer-sub">Institut Teknologi Sepuluh Nopember</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Particle canvas
+        (function () {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let w, h, particles;
+
+            function resize() {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            }
+
+            function Particle() { this.reset(); }
+
+            Particle.prototype.reset = function () {
+                this.x = Math.random() * w;
+                this.y = Math.random() * h;
+                this.r = Math.random() * 1.5 + 0.3;
+                this.alpha = Math.random() * 0.5 + 0.1;
+                this.speed = Math.random() * 0.3 + 0.05;
+                this.angle = Math.random() * Math.PI * 2;
+            };
+
+            Particle.prototype.update = function () {
+                this.x += Math.cos(this.angle) * this.speed;
+                this.y += Math.sin(this.angle) * this.speed;
+                if (this.x < 0 || this.x > w || this.y < 0 || this.y > h) this.reset();
+            };
+
+            function init() {
+                resize();
+                particles = Array.from({ length: 80 }, () => new Particle());
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+                particles.forEach(p => {
+                    p.update();
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(74,144,226,${p.alpha})`;
+                    ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+
+            window.addEventListener('resize', resize);
+            init();
+            draw();
+        })();
+
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('navbar--scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Card hover tilt
+        document.querySelectorAll('.card:not(.card--locked)').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const rx = ((e.clientY - rect.top - rect.height / 2) / (rect.height / 2)) * 6;
+                const ry = (-(e.clientX - rect.left - rect.width / 2) / (rect.width / 2)) * 6;
+                card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+            });
+            card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        });
+
+        // Fade-in on scroll 
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card, .hero-content').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

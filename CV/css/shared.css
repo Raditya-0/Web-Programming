@@ -1,0 +1,118 @@
+/* shared.css — Full-page section layout, shared typography, utilities, buttons, tags */
+
+/* Full-page section layout */
+.hero,
+.container,
+footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.experience-section {
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.experience-section::-webkit-scrollbar {
+    display: none;
+}
+
+.experience-inner {
+    padding: 100px 5%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography utilities */
+.jp-subtitle,
+.jp-heading,
+.jp-category {
+    color: #4a90e2;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-accent {
+    color: #4a90e2;
+}
+
+.section-header,
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-header h2,
+.section-title {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.primary-btn {
+    background-color: #e0e0e0;
+    color: #0d0d0d;
+}
+
+.primary-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 1px solid #e0e0e0;
+    color: #e0e0e0;
+}
+
+.secondary-btn:hover {
+    background-color: #e0e0e0;
+    color: #0d0d0d;
+}
+
+/* Shared tag styles */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background-color: #222;
+    color: #ccc;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+}
