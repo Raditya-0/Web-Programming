@@ -140,6 +140,30 @@
     gap: 20px;
 }
 
+/* About Description */
+.about-description {
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #bbb;
+    animation: tagFadeIn 0.8s 0.2s forwards;
+    opacity: 0;
+}
+
+.about-description p {
+    margin-bottom: 15px;
+}
+
+.dream-job-text {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.dream-job-text strong {
+    color: #fff;
+    font-weight: 700;
+}
+
 /* Hero image / portrait slideshow */
 .hero-image-wrapper {
     flex-shrink: 0;
