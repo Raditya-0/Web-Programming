@@ -8,16 +8,54 @@ body {
   padding: 0;
 }
 
+nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-kiri {
+  color: #000000;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-kanan {
+  color: #000000;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-kiri:hover, .login-kanan:hover {
+  background-color: #eeeeee;
+  color: #000;
+}
+
+.content {
+  padding: 20px;
+}
+
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 30%;
-    height: 50%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+  height: 50%;
 }
 
 th {
-    background-color: blue;
-    color: white;
+  background-color: blue;
+  color: white;
 }
 
 td, th {
@@ -28,33 +66,6 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
-
-nav {
-  background-color: #ffffff;
-  overflow: hidden;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-nav a {
-  color: #000000;
-  text-decoration: none;
-  font-family: arial, sans-serif;
-  font-size: 16px;
-  float: right;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-nav a:hover {
-  background-color: #eeeeee;
-  color: #000;
-}
-
-.content {
-  padding: 20px;
 }
 
 #form-section {
@@ -140,7 +151,8 @@ legend {
 <body>
 
 <nav>
-  <a onclick="document.getElementById('form-section').style.display='block'; document.getElementById('table-section').style.display='none';">Login</a>
+  <a class="menu-kiri" href="../Menu/index.html">Menu</a>
+  <a class="login-kanan" onclick="document.getElementById('form-section').style.display='block'; document.getElementById('table-section').style.display='none';">Login</a>
 </nav>
 
 <div class="content">
@@ -179,7 +191,6 @@ legend {
   </div>
 
   <div id="form-section">
-
     <fieldset>
       <legend>Login</legend>
       <form action="/action_page.php" method="post">
@@ -199,11 +210,9 @@ legend {
         <button type="submit" class="btn-submit">Login</button>
       </form>
     </fieldset>
-
   </div>
 
 </div>
 
 </body>
 </html>
-
