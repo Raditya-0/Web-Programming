@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform Belajar Teknologi & IT Indonesia</title>
+  <link rel="icon" type="image/png" href="../Asset/logo/logo-coda.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../Menu/index.html" class="logo">
+        <div class="logo-icon" style="background:transparent;"><img src="../Asset/logo/logo-coda.png" alt="CODA Logo" style="width:100%; height:100%; object-fit:contain;" /></div>
+        <span>CODA</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#courses">Kursus</a>
+        <a href="#features">Fitur</a>
+        <a href="#pricing">Harga</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-ghost">Masuk</a>
+        <a href="register.html" class="btn btn-primary">Mulai Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shape shape-1"></div>
+    <div class="hero-bg-shape shape-2"></div>
+    <div class="hero-bg-shape shape-3"></div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <span class="badge">
+          <span class="badge-dot"></span>
+          Platform Teknologi & IT #1 di Indonesia
+        </span>
+        <h1 class="hero-title">
+          Kuasai Teknologi,<br />
+          <span class="gradient-text">Raih Karir Impian</span>
+        </h1>
+        <p class="hero-desc">
+          Pelajari Machine Learning, Cybersecurity, Cloud Engineering, dan bidang IT lainnya dengan kurikulum advanced bersama mentor yang aktif bekerja di industri.
+        </p>
+        <div class="hero-actions">
+          <a href="login.html" class="btn btn-primary btn-lg">Mulai Belajar Gratis</a>
+          <a href="#courses" class="btn btn-outline btn-lg">Lihat Semua Kursus</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <img src="../Asset/img/Kursus/img_12.jpg"   alt="user" />
+            <img src="../Asset/img/Kursus/img_16.jpg" alt="user" />
+            <img src="../Asset/img/Kursus/img_15.jpg"  alt="user" />
+            <img src="../Asset/img/Kursus/img_1.jpg" alt="user" />
+          </div>
+          <p><strong>80.000+</strong> developer bergabung</p>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">training.py</span>
+          </div>
+          <div class="window-body">
+<pre><code><span class="code-keyword">import</span> torch
+<span class="code-keyword">from</span> transformers <span class="code-keyword">import</span> AutoModelForCausalLM
+
+<span class="code-comment"># Initialize model</span>
+model = AutoModelForCausalLM.from_pretrained(
+    <span class="code-string">"llama-3-8b"</span>,
+    device_map=<span class="code-string">"auto"</span>
+)
+
+<span class="code-function">print</span>(<span class="code-string">"Starting fine-tuning..."</span>)
+<span class="code-keyword">for</span> epoch <span class="code-keyword">in</span> <span class="code-function">range</span>(epochs):
+    loss = train(model, dataset)
+    <span class="code-function">print</span>(f<span class="code-string">"Epoch {epoch} | Loss: {loss:.4f}"</span>)
+
+<span class="code-function">print</span>(<span class="code-string">"Training Complete!"</span>)</code></pre>
+          </div>
+        </div>
+        <div class="floating-badge">
+          <img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon">
+          Model Optimized
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">80K+</span>
+        <span class="stat-label">Developer Aktif</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">300+</span>
+        <span class="stat-label">Kursus Advanced</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">150+</span>
+        <span class="stat-label">Mentor Industri</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Perusahaan Partner</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners-section">
+    <div class="container">
+      <p class="partners-label">Lulusan kami bekerja di</p>
+      <div class="partners-row">
+        <div class="partner-logo">Google</div>
+        <div class="partner-logo">Gojek</div>
+        <div class="partner-logo">Tokopedia</div>
+        <div class="partner-logo">Shopee</div>
+        <div class="partner-logo">Microsoft</div>
+        <div class="partner-logo">Traveloka</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses-section" id="courses" style="padding: 100px 0; background: var(--bg-soft);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Katalog Belajar</span>
+        <h2 class="section-title">Kursus <span class="gradient-text">Siap Industri</span></h2>
+        <p class="section-sub">Pilih kursus yang langsung bisa dipakai di pekerjaan dengan kurikulum berstandar industri.</p>
+      </div>
+
+      <div class="courses-grid catalog-grid-course" style="display: grid;">
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_6.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-badge-label">Terlaris</span>
+            <span class="course-thumb-title">LLM Engineering</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-ml">Machine Learning</span><span class="course-level">Advanced</span></div>
+            <h3 class="course-title">Fine-Tuning LLM &amp; RAG Systems dengan PyTorch</h3>
+            <p class="course-desc">PEFT, LoRA, QLoRA, RAG pipeline, vector database (Chroma/Weaviate), dan deploy ke production dengan vLLM.</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_3.jpg" alt="mentor" /><span>Rizky Adiputra · Ex-Google Brain</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 52 jam</span><span class="meta-chip"><img src="../Asset/logo/folder.png" class="icon-emoji" alt="icon" /> 18 project</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span><span class="rating-count">(3.241)</span></div>
+              <div class="course-price"><span class="price-old">Rp 699.000</span><span class="price-new">Rp 349.000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_10.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-badge-label badge-red">Expert</span>
+            <span class="course-thumb-title">Red Team Ops</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-cyber">Cybersecurity</span><span class="course-level">Expert</span></div>
+            <h3 class="course-title">Red Team Operations &amp; APT Emulation</h3>
+            <p class="course-desc">Custom C2 framework, living-off-the-land techniques, Active Directory attacks, dan simulasi APT group (MITRE ATT&amp;CK).</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_13.jpg" alt="mentor" /><span>Dhika Wahyudi · OSCP, CRTO</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 64 jam</span><span class="meta-chip"><img src="../Asset/logo/microscope.png" class="icon-emoji" alt="icon" /> 30 lab</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">5.0</span><span class="rating-count">(1.874)</span></div>
+              <div class="course-price"><span class="price-old">Rp 799.000</span><span class="price-new">Rp 399.000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_14.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-badge-label badge-green">Gratis</span>
+            <span class="course-thumb-title">React + Next.js</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-web">Web Dev</span><span class="course-level">Intermediate</span></div>
+            <h3 class="course-title">Next.js 15 Full-Stack: App Router, Server Actions &amp; Edge</h3>
+            <p class="course-desc">React Server Components, streaming UI, Server Actions, middleware, Prisma ORM, dan deploy ke Vercel Edge Network.</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_7.jpg" alt="mentor" /><span>Natasha Putri · Staff Eng. Vercel</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 40 jam</span><span class="meta-chip"><img src="../Asset/logo/folder.png" class="icon-emoji" alt="icon" /> 14 project</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span><span class="rating-count">(5.120)</span></div>
+              <div class="course-price"><span class="price-free">Gratis</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_8.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-thumb-title">Kubernetes</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-cloud">Cloud</span><span class="course-level">Advanced</span></div>
+            <h3 class="course-title">Certified Kubernetes Administrator (CKA) &amp; GitOps</h3>
+            <p class="course-desc">Cluster setup, network policy, RBAC, Helm charts, ArgoCD, Istio service mesh. Termasuk 3 mock exam CKA resmi.</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_4.jpg" alt="mentor" /><span>Budi Hartono · AWS-SAA, CKA</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 56 jam</span><span class="meta-chip"><img src="../Asset/logo/exam.png" class="icon-emoji" alt="icon" /> 3 mock exam</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span><span class="rating-count">(2.340)</span></div>
+              <div class="course-price"><span class="price-old">Rp 599.000</span><span class="price-new">Rp 299.000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_11.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-badge-label badge-orange">Populer</span>
+            <span class="course-thumb-title">Data Engineering</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-data">Data Engineering</span><span class="course-level">Advanced</span></div>
+            <h3 class="course-title">Real-Time Data Pipeline: Apache Kafka &amp; Spark Streaming</h3>
+            <p class="course-desc">Event streaming, CDC dengan Debezium, transformasi real-time, data lakehouse Delta Lake di atas MinIO/S3.</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_5.jpg" alt="mentor" /><span>Lisa Maharani · Data Eng. Shopee</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 44 jam</span><span class="meta-chip"><img src="../Asset/logo/folder.png" class="icon-emoji" alt="icon" /> 10 project</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span><span class="rating-count">(1.980)</span></div>
+              <div class="course-price"><span class="price-old">Rp 549.000</span><span class="price-new">Rp 279.000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="background-image:url('../Asset/img/Kursus/img_2.jpg')">
+            <div class="course-thumb-overlay"></div>
+            <span class="course-thumb-title">Smart Contract Audit</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta"><span class="course-cat cat-blockchain">Blockchain</span><span class="course-level">Expert</span></div>
+            <h3 class="course-title">Smart Contract Security Audit &amp; DeFi Protocol Hacking</h3>
+            <p class="course-desc">Reentrancy, flash loan attacks, price oracle manipulation. Audit dengan Slither dan Foundry, CTF DeFi challenges.</p>
+            <div class="course-instructor"><img src="../Asset/img/Kursus/img_18.jpg" alt="mentor" /><span>Ahmad Fauzi · Blockchain Security Researcher</span></div>
+            <div class="course-meta-row"><span class="meta-chip"><img src="../Asset/logo/clock.png" class="icon-emoji" alt="icon" /> 60 jam</span><span class="meta-chip"><img src="../Asset/logo/microscope.png" class="icon-emoji" alt="icon" /> 25 CTF lab</span><span class="meta-chip"><img src="../Asset/logo/medal.png" class="icon-emoji" alt="icon" /> Sertifikat</span></div>
+            <div class="course-footer">
+              <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">5.0</span><span class="rating-count">(763)</span></div>
+              <div class="course-price"><span class="price-old">Rp 799.000</span><span class="price-new">Rp 399.000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses-cta">
+        <a href="register.html" class="btn btn-outline btn-lg">Lihat Semua 300+ Kursus &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FEATURES -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-layout">
+        <div class="features-left">
+          <span class="section-tag">Mengapa CODA?</span>
+          <h2 class="section-title">Belajar yang<br /><span class="gradient-text">Hands-On &amp; Production-Grade</span></h2>
+          <p class="section-sub">Bukan video teori 10 jam. Setiap kursus dilengkapi lab interaktif, proyek nyata, dan code review langsung dari engineer yang bekerja di industri.</p>
+          <a href="login.html" class="btn btn-primary btn-lg">Coba Gratis 14 Hari</a>
+        </div>
+        <div class="features-right">
+          <div class="feature-item">
+            <div class="feature-icon-wrap icon-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Lab Virtual &amp; Sandbox Penuh</h3>
+              <p>Environment GPU cloud untuk ML, isolated VM untuk pentesting, Kubernetes cluster untuk latihan — semuanya di browser, tanpa install apapun.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap icon-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Sertifikat Bertaraf Industri</h3>
+              <p>Sertifikat CODA diverifikasi oleh 500+ perusahaan tech dan dapat langsung ditampilkan di LinkedIn sebagai verified credential — bukan sekadar badge.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Code Review &amp; Project Submission</h3>
+              <p>Setiap project kamu di-review langsung oleh mentor yang bekerja di perusahaan tier-1. Feedback spesifik, bukan auto-grader — seperti pair programming nyata.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap icon-orange">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Kurikulum Diperbarui Setiap Kuartal</h3>
+              <p>Tech stack bergerak cepat. Kurikulum kami diperbarui tiap 3 bulan bersama advisory board dari Google, Gojek, dan Tokopedia agar selalu relevan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Kisah Sukses</span>
+        <h2 class="section-title">Dari Belajar ke<br /><span class="gradient-text">Karir Nyata</span></h2>
+        <p class="section-sub">Mereka memulai dari nol dan kini bekerja sebagai profesional teknologi di perusahaan impian.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card tcard-featured">
+          <div class="tcard-job-tag"><img src="../Asset/logo/briefcase.png" class="icon-emoji" alt="icon" /> Diterima sebagai Security Engineer</div>
+          <p class="tcard-text">"Setelah 9 bulan ikut Spesialisasi Offensive Security di CODA, saya berhasil dapat kerja sebagai Security Engineer di unicorn fintech. Lab Red Team-nya sangat realistis — lebih lengkap dari training bootcamp manapun yang pernah saya coba."</p>
+          <div class="tcard-author">
+            <img src="../Asset/img/Kursus/img_17.jpg" alt="user" class="tcard-img" />
+            <div>
+              <p class="author-name">Farhan Alamsyah</p>
+              <p class="author-info">Security Engineer · Bank BCA Digital</p>
+            </div>
+            <div class="tcard-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tcard-job-tag tcard-job-dark"><img src="../Asset/logo/robot.png" class="icon-emoji" alt="icon" /> ML Engineer · Tokopedia</div>
+          <p class="tcard-text">"Kursus LLM Engineering-nya luar biasa advanced. Saya langsung bisa fine-tune model sendiri dan deploy ke production pakai vLLM. 4 bulan setelah selesai, langsung dapat offer dari Tokopedia."</p>
+          <div class="tcard-author">
+            <img src="../Asset/img/Kursus/img_9.jpg" alt="user" class="tcard-img" />
+            <div>
+              <p class="author-name">Siti Rahayu</p>
+              <p class="author-info">ML Engineer · Tokopedia</p>
+            </div>
+            <div class="tcard-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tcard-job-tag tcard-job-dark">☁️ Platform Engineer · Gojek</div>
+          <p class="tcard-text">"Spesialisasi Cloud-Native-nya beda level dari tempat lain. Bukan hanya deploy container biasa, tapi benar-benar diajarkan production architecture. Langsung dipanggil interview Gojek setelah upload project portfolio-nya."</p>
+          <div class="tcard-author">
+            <img src="../Asset/img/Kursus/img_0.jpg" alt="user" class="tcard-img" />
+            <div>
+              <p class="author-name">Muhammad Pratama</p>
+              <p class="author-info">Platform Engineer · Gojek</p>
+            </div>
+            <div class="tcard-stars">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Paket Harga</span>
+        <h2 class="section-title">Investasi untuk<br /><span class="gradient-text">Karir Teknologimu</span></h2>
+        <p class="section-sub">Mulai gratis, upgrade kapan saja.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="plan-icon"><img src="../Asset/logo/leaf.png" class="icon-emoji" alt="icon" /></span>
+            <h3 class="plan-name">Free</h3>
+            <p class="plan-desc">Mulai belajar tanpa biaya</p>
+          </div>
+          <div class="plan-price"><span class="price-amount">Gratis</span></div>
+          <ul class="plan-features">
+            <li class="feat-yes">Akses 80+ kursus gratis</li>
+            <li class="feat-yes">Lab virtual terbatas (5 jam/bln)</li>
+            <li class="feat-yes">Forum komunitas developer</li>
+            <li class="feat-yes">Sertifikat penyelesaian</li>
+            <li class="feat-no">Code review mentor</li>
+            <li class="feat-no">Lab GPU untuk ML</li>
+            <li class="feat-no">Career coaching</li>
+          </ul>
+          <a href="register.html" class="btn btn-outline btn-full">Mulai Gratis</a>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-best-badge">Paling Populer</div>
+          <div class="pricing-header">
+            <span class="plan-icon"><img src="../Asset/logo/rocket.png" class="icon-emoji" alt="icon" /></span>
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-desc">Untuk developer serius</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-period">Rp</span>
+            <span class="price-amount">199.000</span>
+            <span class="price-period">/ bulan</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes">Akses semua 300+ kursus</li>
+            <li class="feat-yes">Lab GPU cloud tanpa batas</li>
+            <li class="feat-yes">Code review mentor (3x/bln)</li>
+            <li class="feat-yes">Sertifikat industri terverifikasi</li>
+            <li class="feat-yes">Download materi offline</li>
+            <li class="feat-yes">Discord channel eksklusif</li>
+            <li class="feat-no">Career coaching 1-on-1</li>
+          </ul>
+          <a href="register.html" class="btn btn-primary btn-full">Mulai Sekarang</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="plan-icon"><img src="../Asset/logo/crown.png" class="icon-emoji" alt="icon" /></span>
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">Untuk tim &amp; perusahaan</p>
+          </div>
+          <div class="plan-price"><span class="price-amount">Custom</span></div>
+          <ul class="plan-features">
+            <li class="feat-yes">Semua fitur Pro</li>
+            <li class="feat-yes">Career coaching 1-on-1</li>
+            <li class="feat-yes">Dashboard tim &amp; progress report</li>
+            <li class="feat-yes">Kursus custom sesuai kebutuhan</li>
+            <li class="feat-yes">Dedicated account manager</li>
+            <li class="feat-yes">SLA &amp; dukungan prioritas</li>
+            <li class="feat-yes">Invoice &amp; billing perusahaan</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Hubungi Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-code-bg">
+          <span>def build_your_career():</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;skills = CODA.learn(course="all")</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;return Career(level="expert", salary="3x")</span>
+        </div>
+        <h2>Siap Memulai Karir<br />di Dunia Teknologi?</h2>
+        <p>Daftar sekarang dan mulai pelajari modul pertama secara gratis. Tingkatkan skill-mu bersama mentor industri.</p>
+        <div class="cta-actions">
+          <a href="register.html" class="btn btn-white btn-lg">Daftar Akun Gratis</a>
+          <a href="#courses" class="btn btn-ghost-white btn-lg">Jelajahi Kursus</a>
+        </div>
+        <div class="cta-trust">
+          <span>✓ Modul pertama gratis</span>
+          <span>✓ Sertifikat industri</span>
+          <span>✓ 80.000+ developer bergabung</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo logo-white">
+          <div class="logo-icon" style="background:transparent;"><img src="../Asset/logo/logo-coda.png" alt="CODA Logo" style="width:100%; height:100%; object-fit:contain;" /></div>
+          <span>CODA</span>
+        </a>
+        <p class="footer-tagline">Platform belajar teknologi & IT advanced untuk developer Indonesia. Dari intermediate hingga expert-level.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn"><img src="../Asset/logo/instagram.png" alt="IG" style="width:18px;height:18px;"/></a>
+          <a href="#" class="social-btn"><img src="../Asset/logo/youtube.png" alt="YT" style="width:18px;height:18px;"/></a>
+          <a href="#" class="social-btn"><img src="../Asset/logo/linkedin.png" alt="LI" style="width:18px;height:18px;"/></a>
+          <a href="https://github.com/Raditya-0/Web-Programming/tree/main/Kursus" class="social-btn"><img src="../Asset/logo/github.png" alt="GH" style="width:18px;height:18px;"/></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Spesialisasi</h4>
+        <ul>
+          <li><a href="#courses">ML &amp; LLM Engineering</a></li>
+          <li><a href="#courses">Offensive Security</a></li>
+          <li><a href="#courses">Cloud-Native &amp; Platform Eng</a></li>
+          <li><a href="#courses">Data Engineering</a></li>
+          <li><a href="#courses">Blockchain &amp; Web3</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#">Tentang CODA</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Blog Teknologi</a></li>
+          <li><a href="#">Partner Enterprise</a></li>
+          <li><a href="#">Jadi Mentor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Dukungan</h4>
+        <ul>
+          <li><a href="#">Pusat Bantuan</a></li>
+          <li><a href="#">Komunitas Discord</a></li>
+          <li><a href="#">Status Platform</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat &amp; Ketentuan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 CODA. Hak cipta dilindungi undang-undang.</p>
+        <p>Made for developers in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
