@@ -1,12 +1,12 @@
 //  app.js — Auth, artikel, routing, utilities
 
-/* ─── Bootstrap & seed ─────────────────────────────────────── */
+/* Bootstrap & seed */
 document.addEventListener('DOMContentLoaded', () => {
   seedData();       // dari data.js
   initPage();
 });
 
-/* ─── Auth helpers ─────────────────────────────────────────── */
+/ Auth helpers */
 function getCurrentUser() {
   const raw = localStorage.getItem('currentUser');
   return raw ? JSON.parse(raw) : null;
@@ -29,7 +29,7 @@ function requireAuth() {
   return true;
 }
 
-/* ─── Article helpers ──────────────────────────────────────── */
+/* Article helpers */
 function getArticles() {
   return JSON.parse(localStorage.getItem('articles') || '[]');
 }
@@ -48,7 +48,7 @@ function getNextArticleId() {
   return Math.max(...articles.map(a => Number(a.id))) + 1;
 }
 
-/* ─── User helpers ─────────────────────────────────────────── */
+/* User helpers */
 function getUsers() {
   return JSON.parse(localStorage.getItem('users') || '[]');
 }
@@ -61,7 +61,7 @@ function getUserById(id) {
   return getUsers().find(u => u.id === id);
 }
 
-/* ─── Avatar helpers ───────────────────────────────────────── */
+/* Avatar helpers */
 const AVATAR_COLORS = [
   '#1a8917', '#2563eb', '#d97706', '#7c3aed',
   '#db2777', '#0891b2', '#65a30d', '#dc2626',
@@ -83,13 +83,13 @@ function avatarHTML(name, size = 36) {
   return `<span class="avatar-initials" style="background:${color};width:${size}px;height:${size}px;font-size:${Math.round(size * 0.38)}px">${initials}</span>`;
 }
 
-/* ─── Date helpers ─────────────────────────────────────────── */
+/* Date helpers */
 function formatDate(dateStr) {
   const d = new Date(dateStr);
   return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-/* ─── Page router ──────────────────────────────────────────── */
+/* Page router */
 function initPage() {
   const page = document.body.dataset.page;
   renderNavbar();
@@ -103,7 +103,7 @@ function initPage() {
   }
 }
 
-/* ─── Navbar ───────────────────────────────────────────────── */
+/* Navbar */
 function renderNavbar() {
   const user = getCurrentUser();
   const authEl = document.getElementById('nav-auth');
@@ -135,7 +135,7 @@ function renderNavbar() {
   }
 }
 
-/* ─── INDEX PAGE ───────────────────────────────────────────── */
+/* INDEX PAGE */
 function initIndex() {
   const articles = getArticles();
   renderFeatured(articles[0]);
@@ -265,7 +265,7 @@ function filterByCategory(cat) {
   if (btn) btn.click();
 }
 
-/* ─── LOGIN PAGE ───────────────────────────────────────────── */
+/* LOGIN PAGE */
 function initLogin() {
   if (getCurrentUser()) { window.location.href = 'index.html'; return; }
   const form = document.getElementById('login-form');
@@ -288,7 +288,7 @@ function initLogin() {
   });
 }
 
-/* ─── REGISTER PAGE ────────────────────────────────────────── */
+/* REGISTER PAGE */
 function initRegister() {
   if (getCurrentUser()) { window.location.href = 'index.html'; return; }
   const form = document.getElementById('register-form');
@@ -329,7 +329,7 @@ function initRegister() {
   });
 }
 
-/* ─── ARTICLE PAGE ─────────────────────────────────────────── */
+/* ARTICLE PAGE */
 function initArticle() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
@@ -393,7 +393,7 @@ function initClaps(article) {
   });
 }
 
-/* ─── PROFILE PAGE ─────────────────────────────────────────── */
+/* PROFILE PAGE */
 function initProfile() {
   const urlParams = new URLSearchParams(window.location.search);
   const authorId = urlParams.get('id');
@@ -526,7 +526,7 @@ function initProfileTabs(user) {
   });
 }
 
-/* ─── WRITE PAGE ───────────────────────────────────────────── */
+/* WRITE PAGE */
 function initWrite() {
   if (!requireAuth()) return;
   const form = document.getElementById('write-form');
@@ -573,7 +573,7 @@ function initWrite() {
   });
 }
 
-/* ─── Form validation helpers ──────────────────────────────── */
+/* Form validation helpers */
 function showError(input, message) {
   input.classList.add('is-invalid');
   let fb = input.parentElement.querySelector('.invalid-feedback');
