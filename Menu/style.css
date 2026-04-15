@@ -1,8 +1,6 @@
-/* =========================================================
-   style.css — Menu Utama  |  Tema Hitam × Biru
-   ========================================================= */
+/* style.css — Menu Utama */
 
-/* ── Design Tokens ──────────────────────────────────────── */
+/* Design Tokens */
 :root {
     --bg: #0a0a0f;
     --bg-surface: #111118;
@@ -139,7 +137,7 @@ a {
     color: var(--blue);
 }
 
-/* ── Hero ───────────────────────────────────────────────── */
+/* Hero */
 .hero {
     position: relative;
     z-index: 1;
